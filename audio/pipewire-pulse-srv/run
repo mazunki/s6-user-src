@@ -1,0 +1,4 @@
+#!/bin/execlineb -P
+envfile /etc/s6/config/user-mazunki.conf
+fdmove -c 2 1
+exec s6-notifyoncheck pipewire -c /etc/pipewire/pipewire-pulse.conf
