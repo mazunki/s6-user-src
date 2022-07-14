@@ -1,0 +1,6 @@
+#!/bin/execlineb -P
+envfile /etc/s6/config/user-mazunki.conf
+fdmove -c 2 1
+importas -i ADDR DBUS_SESSION_BUS_ADDRESS
+dbus-daemon --nofork --nopidfile --session --address=${ADDR} --print-address=3
+

@@ -1,0 +1,2 @@
+#!/bin/execlineb -P
+/home/mazunki/.local/bin/s6-userlogger dbus-user
