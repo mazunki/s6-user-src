@@ -1,4 +1,4 @@
 #!/bin/execlineb -P
 envfile /etc/s6/config/user-mazunki.conf
 fdmove -c 2 1
-exec s6-notifyoncheck wireplumber
+exec s6-notifyoncheck -d wireplumber
